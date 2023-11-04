@@ -1,0 +1,4 @@
+drf_venv
+restframework_drf/drf_demo/__pycache__/
+restframework_drf/drf_demo/migrations/__pycache__/
+restframework_drf/restframework_drf/__pycache__/
