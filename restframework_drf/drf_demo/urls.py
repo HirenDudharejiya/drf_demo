@@ -8,6 +8,8 @@ from rest_framework import routers, serializers, viewsets
 
 urlpatterns = [
     path('', include('rest_framework.urls', namespace='rest_framework')),
+    path('user_login/', views.user_login, name="user_login"),
+    path('all_employee_list/', views.all_employee_list, name='all_employee_list'),
     path('index/<str:a>/<str:b>/', views.index, name="index"),
     path('employee/', views.EmployeesViews.as_view({'get': 'list', "post": 'create'}), name="employee"),
     path('employee/<str:id>/', views.EmployeesViews.as_view({'get': 'retrieve', 'delete': 'destroy', 
